@@ -13,13 +13,14 @@ struct SelectView: View {
     
     let maxSelections = 3
     
-    @State private var selectedInterests: [String] = []
+    @Binding var selectedInterests: [String]
     
     var body: some View {
         NavigationStack{
             FlowLayout(items: interests, itemContent: { interest in
                 InterestCapsule(interest: interest, isSelected: selectedInterests.contains(interest)) {
                     toggleInterestSelection(interest)
+                    print(selectedInterests)
                 }
             }
             )

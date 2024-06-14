@@ -38,6 +38,9 @@ struct NameAddView: View {
                     .fontWeight(.bold)
                     .background(Color.primary)
                     .cornerRadius(10)
+                    .onTapGesture {
+                        UserDefaults.standard.set(name, forKey: "name")
+                    }
                 }
             }
             .navigationTitle("이름을 입력해주세요")

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FoodSelectView: View {
     
+    @State private var selectedFoods: [String] = []
+    
     @Binding var isShowingSheet: Bool
     
     var body: some View {
@@ -17,10 +19,9 @@ struct FoodSelectView: View {
                                    "햄버거", "카레", "타코", "감바스", "라면",
                                    "갈비", "샌드위치", "간장게장", "초밥", "팟타이",
                                    "팬케이크", "떡볶이", "라멘", "라자냐", "치킨"
-                                  ])
+                                  ], selectedInterests: $selectedFoods)
         }
         .navigationBarTitle("좋아하는 음식을 선택하세요")
-        
         
         HStack {
             Button(action: {
@@ -34,7 +35,9 @@ struct FoodSelectView: View {
             .background(Color.secondary.opacity(0.4))
             .cornerRadius(10)
             
-            Button(action: {}, label: {
+            Button(action: {
+                UserDefaults.standard.set(selectedFoods, forKey: "foods")
+            }, label: {
                 Text("완료")
             })
             .frame(width: 170, height: 56)

@@ -22,41 +22,42 @@ struct MyCardView: View {
                     .font(.largeTitle)
                     .foregroundStyle(.black)
                     .onTapGesture {
-                        // 보관함 버튼 클릭했을 떄 
+                        // 보관함 버튼 클릭했을 떄
                     }
             }
             .padding()
             
-            // #1. 카드 없을 때
-            Spacer()
-            noCardView
-            Spacer()
-            
-            // #2. 카드 있을 때
-//            cardView
-//            
-//            Button(action: {
-//                // Action for sharing the card
-//                self.isSharedPresented = true
-//            }) {
-//                HStack {
-//                    Image(systemName: "square.and.arrow.up")
-//                        .foregroundStyle(.white)
-//                    Text("공유하기")
-//                        .bold()
-//                        .foregroundStyle(.white)
-//                }
-//                .padding()
-//                .frame(maxWidth: .infinity)
-//                .background(.black)
-//                .cornerRadius(10)
-//            }
-//            .sheet(
-//                isPresented: $isSharedPresented,
-//                onDismiss: { print("Dismiss") },
-//                content: { ActivityViewController(activityItems: [cardView.asUIImage(size: CGSize(width: 353, height: 600))]) }
-//            )
-//            .padding()
+            if UserDefaults.standard.name == nil || UserDefaults.standard.name == "" {
+                // #1. 카드 없을 때
+                Spacer()
+                noCardView
+                Spacer()
+            } else {
+               cardView
+               
+               Button(action: {
+                   // Action for sharing the card
+                   self.isSharedPresented = true
+               }) {
+                   HStack {
+                       Image(systemName: "square.and.arrow.up")
+                           .foregroundStyle(.white)
+                       Text("공유하기")
+                           .bold()
+                           .foregroundStyle(.white)
+                   }
+                   .padding()
+                   .frame(maxWidth: .infinity)
+                   .background(.black)
+                   .cornerRadius(10)
+               }
+               .sheet(
+                   isPresented: $isSharedPresented,
+                   onDismiss: { print("Dismiss") },
+                   content: { ActivityViewController(activityItems: [cardView.asUIImage(size: CGSize(width: 353, height: 600))]) }
+               )
+               .padding()
+            }
         }
     }
     
@@ -90,7 +91,7 @@ struct MyCardView: View {
             
             VStack(alignment: .leading) {
                 HStack {
-                    Text("정해시")
+                    Text(UserDefaults.standard.name ?? "")
                         .font(.title)
                         .bold()
                         .padding(.leading, 20)
@@ -116,9 +117,9 @@ struct MyCardView: View {
                     .foregroundStyle(.white)
                 
                 HStack {
-                    TagView(text: "운동")
-                    TagView(text: "고양이")
-                    TagView(text: "의류")
+                    ForEach(UserDefaults.standard.interested ?? [], id: \.self) { tag in
+                        TagView(text: tag)
+                    }
                 }
                 .padding(.bottom, 20)
                 .padding(.leading, 20)
@@ -129,9 +130,9 @@ struct MyCardView: View {
                     .foregroundStyle(.white)
                 
                 HStack {
-                    TagView(text: "떡볶이")
-                    TagView(text: "피자")
-                    TagView(text: "치킨")
+                    ForEach(UserDefaults.standard.likeFood ?? [], id: \.self) { tag in
+                        TagView(text: tag)
+                    }
                 }
                 .padding(.bottom, 20)
                 .padding(.leading, 20)

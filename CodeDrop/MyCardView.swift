@@ -1,0 +1,117 @@
+//
+//  MyCardView.swift
+//  CodeDrop
+//
+//  Created by 신승아 on 6/15/24.
+//
+
+import SwiftUI
+
+struct MyCardView: View {
+    var body: some View {
+        VStack {
+            HStack {
+                Text("내 카드")
+                    .font(.largeTitle)
+                    .bold()
+                    
+                Spacer()
+                Image(systemName: "tray")
+                    .font(.title)
+            }
+            .padding()
+            
+            ZStack {
+                Rectangle()
+                    .foregroundStyle(.orange)
+                    .cornerRadius(12)
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("정해시")
+                            .font(.title)
+                            .bold()
+                            .padding(.leading, 20)
+                            .padding(.top, 20)
+                        
+                        Spacer()
+                            
+                        Image(systemName: "ellipsis")
+                            .font(.title)
+                            .padding(.top, 20)
+                            .padding(.trailing, 20)
+                        
+                    }
+                    
+                    
+                    Spacer()
+                    
+                    Text("관심사")
+                        .bold()
+                        .padding(.leading, 20)
+                    
+                    HStack {
+                        TagView(text: "운동")
+                        TagView(text: "고양이")
+                        TagView(text: "의류")
+                    }
+                    .padding(.bottom, 20)
+                    .padding(.leading, 20)
+                    
+                    Text("좋아하는 음식")
+                        .bold()
+                        .padding(.leading, 20)
+                    
+                    HStack {
+                        TagView(text: "떡볶이")
+                        TagView(text: "피자")
+                        TagView(text: "치킨")
+                    }
+                    .padding(.bottom, 20)
+                    .padding(.leading, 20)
+                }
+                
+            }
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
+            .frame(height: 500)
+            
+            Button(action: {
+                // Action for sharing the card
+            }) {
+                HStack {
+                    Image(systemName: "square.and.arrow.up")
+                        .foregroundStyle(.white)
+                    Text("공유하기")
+                        .bold()
+                        .foregroundStyle(.white)
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(.black)
+                .cornerRadius(10)
+            }
+            .padding()
+        }
+    }
+}
+
+struct TagView: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            .background(Color.gray.opacity(0.2))
+            .cornerRadius(20)
+            .foregroundColor(.black)
+            .font(.subheadline)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyCardView()
+    }
+}

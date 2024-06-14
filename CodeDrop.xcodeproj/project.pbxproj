@@ -13,6 +13,7 @@
 		8C0B28B92C1C77FD00ED0F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */; };
 		8C0B28BC2C1C77FD00ED0F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */; };
 		8C0B28C62C1C7B5400ED0F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28C52C1C7B5400ED0F88 /* .gitignore */; };
+		8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeDrop.entitlements; sourceTree = "<group>"; };
 		8C0B28C52C1C7B5400ED0F88 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */,
 				8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */,
 				8C0B28B62C1C77FB00ED0F88 /* Item.swift */,
+				8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */,
 				8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */,
 				8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */,
 				8C0B28BA2C1C77FD00ED0F88 /* Preview Content */,
@@ -148,6 +151,7 @@
 			files = (
 				8C0B28B52C1C77FB00ED0F88 /* ContentView.swift in Sources */,
 				8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */,
+				8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */,
 				8C0B28B32C1C77FB00ED0F88 /* CodeDropApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

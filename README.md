@@ -1,5 +1,5 @@
 # 🍚 Babyak (바뱍)
-<img width="338" alt="AppIcon" src="">
+<img width="338" alt="AppIcon" src="https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_icon.png?raw=true">
 
 **Babyak은 친해지고 싶은 사람과의 식사 자리에서 편하게 대화할 수 있도록 도와줍니다.**<br/>
 직장에서 친해지고 싶은 사람이 있나요?<br/> 

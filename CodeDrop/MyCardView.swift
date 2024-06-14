@@ -21,34 +21,65 @@ struct MyCardView: View {
                 Image(systemName: "tray.circle.fill")
                     .font(.largeTitle)
                     .foregroundStyle(.black)
+                    .onTapGesture {
+                        // 보관함 버튼 클릭했을 떄 
+                    }
             }
             .padding()
             
-            cardView
+            // #1. 카드 없을 때
+            Spacer()
+            noCardView
+            Spacer()
             
-            Button(action: {
-                // Action for sharing the card
-                self.isSharedPresented = true
-            }) {
-                HStack {
-                    Image(systemName: "square.and.arrow.up")
-                        .foregroundStyle(.white)
-                    Text("공유하기")
-                        .bold()
-                        .foregroundStyle(.white)
-                }
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(.black)
-                .cornerRadius(10)
-            }
-            .sheet(
-                isPresented: $isSharedPresented,
-                onDismiss: { print("Dismiss") },
-                content: { ActivityViewController(activityItems: [cardView.asUIImage(size: CGSize(width: 353, height: 600))]) }
-            )
-            .padding()
+            // #2. 카드 있을 때
+//            cardView
+//            
+//            Button(action: {
+//                // Action for sharing the card
+//                self.isSharedPresented = true
+//            }) {
+//                HStack {
+//                    Image(systemName: "square.and.arrow.up")
+//                        .foregroundStyle(.white)
+//                    Text("공유하기")
+//                        .bold()
+//                        .foregroundStyle(.white)
+//                }
+//                .padding()
+//                .frame(maxWidth: .infinity)
+//                .background(.black)
+//                .cornerRadius(10)
+//            }
+//            .sheet(
+//                isPresented: $isSharedPresented,
+//                onDismiss: { print("Dismiss") },
+//                content: { ActivityViewController(activityItems: [cardView.asUIImage(size: CGSize(width: 353, height: 600))]) }
+//            )
+//            .padding()
         }
+    }
+    
+    private var noCardView: some View {
+                    
+        VStack(spacing: 10) {
+            Image(systemName: "plus.circle.fill")
+                .resizable()
+                .frame(width: 34, height: 34)
+                .foregroundStyle(.black)
+                
+            Text("카드 만들기")
+                .font(.title2)
+                .bold()
+                        
+            Text("약속을 위한 카드를 만들어보세요.")
+                .font(.subheadline)
+            }
+            .onTapGesture {
+                // 카드 만들기 버튼 클릭했을 때
+            }
+            .padding()
+                
     }
     
     private var cardView: some View {

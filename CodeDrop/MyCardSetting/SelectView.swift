@@ -111,7 +111,3 @@ struct InterestCapsule: View {
         }
     }
 }
-
-//#Preview {
-//    InterestSelectView(title: String, interests: [String])
-//}

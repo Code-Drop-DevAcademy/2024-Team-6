@@ -21,7 +21,6 @@ struct InterestSelectView: View {
             HStack {
                 Button("취소") {
                     isShowingSheet.toggle()
-                    print(selectedInterests)
                 }
                 .frame(width: 171, height: 56)
                 .foregroundColor(.secondary)
@@ -45,7 +44,3 @@ struct InterestSelectView: View {
         .navigationBarTitle("관심사를 선택하세요")
     }
 }
-
-//#Preview {
-//    InterestSelectView()
-//}

@@ -37,6 +37,9 @@ struct FoodSelectView: View {
             
             Button(action: {
                 UserDefaults.standard.set(selectedFoods, forKey: "foods")
+                
+                isShowingSheet.toggle()
+                
             }, label: {
                 Text("완료")
             })
@@ -48,7 +51,3 @@ struct FoodSelectView: View {
         }
     }
 }
-
-//#Preview {
-//    FoodSelectView()
-//}

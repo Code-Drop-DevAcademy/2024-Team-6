@@ -47,7 +47,3 @@ struct NameAddView: View {
         }
     }
 }
-//
-//#Preview {
-//    NameAddView()
-//}

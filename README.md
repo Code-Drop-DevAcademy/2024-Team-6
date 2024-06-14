@@ -6,6 +6,9 @@
 그 사람과 식사 약속을 잡고싶은데, 어떤 얘기를 해야 할지 걱정되시나요?<br/> 
 바뱍이 당신의 자연스러운 밥 약속을 도와드릴게요! <br/> 
 
+## 💭 Ideation
+<img width="800" alt="AppFlow" src="https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_planning.png?raw=true">
+
 ## :pushpin: Features
 
 - **나의 바뱍카드 생성하기**: 나의 이름과 관심사, 음식 취향을 한눈에 볼 수 있는 프로필 카드를 생성합니다.

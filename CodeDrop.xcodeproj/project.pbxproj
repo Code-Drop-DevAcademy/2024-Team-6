@@ -14,8 +14,9 @@
 		8C0B28BC2C1C77FD00ED0F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */; };
 		8C0B28C62C1C7B5400ED0F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28C52C1C7B5400ED0F88 /* .gitignore */; };
 		BDE3E53E2C1CB3C4007510DF /* NameAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E53D2C1CB3C4007510DF /* NameAddView.swift */; };
-		BDE3E5402C1CB538007510DF /* InterestSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E53F2C1CB538007510DF /* InterestSelectView.swift */; };
+		BDE3E5402C1CB538007510DF /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E53F2C1CB538007510DF /* SelectView.swift */; };
 		BDE3E5422C1CB54E007510DF /* FoodSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E5412C1CB54E007510DF /* FoodSelectView.swift */; };
+		BDE3E5472C1CD1A4007510DF /* InterestSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E5462C1CD1A4007510DF /* InterestSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,10 @@
 		8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeDrop.entitlements; sourceTree = "<group>"; };
 		8C0B28C52C1C7B5400ED0F88 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BDE3E53D2C1CB3C4007510DF /* NameAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAddView.swift; sourceTree = "<group>"; };
-		BDE3E53F2C1CB538007510DF /* InterestSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestSelectView.swift; sourceTree = "<group>"; };
+		BDE3E53F2C1CB538007510DF /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		BDE3E5412C1CB54E007510DF /* FoodSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSelectView.swift; sourceTree = "<group>"; };
+		BDE3E5462C1CD1A4007510DF /* InterestSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestSelectView.swift; sourceTree = "<group>"; };
+		BDE3E5482C1CD72A007510DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +66,9 @@
 		8C0B28B12C1C77FB00ED0F88 /* CodeDrop */ = {
 			isa = PBXGroup;
 			children = (
+				BDE3E5482C1CD72A007510DF /* Info.plist */,
 				8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */,
-				BDE3E5432C1CB55D007510DF /* Setting */,
+				BDE3E5432C1CB55D007510DF /* MyCardSetting */,
 				8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */,
 				8C0B28B62C1C77FB00ED0F88 /* Item.swift */,
 				8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */,
@@ -82,14 +86,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BDE3E5432C1CB55D007510DF /* Setting */ = {
+		BDE3E5432C1CB55D007510DF /* MyCardSetting */ = {
 			isa = PBXGroup;
 			children = (
 				BDE3E53D2C1CB3C4007510DF /* NameAddView.swift */,
-				BDE3E53F2C1CB538007510DF /* InterestSelectView.swift */,
+				BDE3E5462C1CD1A4007510DF /* InterestSelectView.swift */,
 				BDE3E5412C1CB54E007510DF /* FoodSelectView.swift */,
+				BDE3E53F2C1CB538007510DF /* SelectView.swift */,
 			);
-			path = Setting;
+			path = MyCardSetting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDE3E5472C1CD1A4007510DF /* InterestSelectView.swift in Sources */,
 				8C0B28B52C1C77FB00ED0F88 /* ContentView.swift in Sources */,
 				8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */,
 				BDE3E53E2C1CB3C4007510DF /* NameAddView.swift in Sources */,
-				BDE3E5402C1CB538007510DF /* InterestSelectView.swift in Sources */,
+				BDE3E5402C1CB538007510DF /* SelectView.swift in Sources */,
 				BDE3E5422C1CB54E007510DF /* FoodSelectView.swift in Sources */,
 				8C0B28B32C1C77FB00ED0F88 /* CodeDropApp.swift in Sources */,
 			);
@@ -307,6 +313,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeDrop/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +345,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeDrop/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

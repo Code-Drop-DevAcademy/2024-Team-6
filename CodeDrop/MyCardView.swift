@@ -16,8 +16,9 @@ struct MyCardView: View {
                     .bold()
                     
                 Spacer()
-                Image(systemName: "tray")
-                    .font(.title)
+                Image(systemName: "tray.circle.fill")
+                    .font(.largeTitle)
+                    .foregroundStyle(.black)
             }
             .padding()
             
@@ -33,6 +34,7 @@ struct MyCardView: View {
                             .bold()
                             .padding(.leading, 20)
                             .padding(.top, 20)
+                            .foregroundStyle(.white)
                         
                         Spacer()
                             
@@ -40,6 +42,7 @@ struct MyCardView: View {
                             .font(.title)
                             .padding(.top, 20)
                             .padding(.trailing, 20)
+                            .foregroundStyle(.white)
                         
                     }
                     
@@ -49,6 +52,7 @@ struct MyCardView: View {
                     Text("관심사")
                         .bold()
                         .padding(.leading, 20)
+                        .foregroundStyle(.white)
                     
                     HStack {
                         TagView(text: "운동")
@@ -61,6 +65,7 @@ struct MyCardView: View {
                     Text("좋아하는 음식")
                         .bold()
                         .padding(.leading, 20)
+                        .foregroundStyle(.white)
                     
                     HStack {
                         TagView(text: "떡볶이")
@@ -105,8 +110,8 @@ struct TagView: View {
             .padding(.vertical, 8)
             .background(Color.gray.opacity(0.2))
             .cornerRadius(20)
-            .foregroundColor(.black)
-            .font(.subheadline)
+            .foregroundStyle(.white)
+            .bold()
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79CA3B202C1CBB4800CE2ED5 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA3B1F2C1CBB4800CE2ED5 /* StorageView.swift */; };
 		8C0B28B32C1C77FB00ED0F88 /* CodeDropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */; };
 		8C0B28B52C1C77FB00ED0F88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */; };
 		8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28B62C1C77FB00ED0F88 /* Item.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79CA3B1F2C1CBB4800CE2ED5 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		8C0B28AF2C1C77FB00ED0F88 /* CodeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDropApp.swift; sourceTree = "<group>"; };
 		8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */,
 				BDE3E5432C1CB55D007510DF /* MyCardSetting */,
 				8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */,
+				79CA3B1F2C1CBB4800CE2ED5 /* StorageView.swift */,
 				8C0B28B62C1C77FB00ED0F88 /* Item.swift */,
 				8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */,
 				8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */,
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDE3E5472C1CD1A4007510DF /* InterestSelectView.swift in Sources */,
+				79CA3B202C1CBB4800CE2ED5 /* StorageView.swift in Sources */,
 				8C0B28B52C1C77FB00ED0F88 /* ContentView.swift in Sources */,
 				8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */,
 				BDE3E53E2C1CB3C4007510DF /* NameAddView.swift in Sources */,
@@ -309,7 +313,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeDrop/Preview Content\"";
-				DEVELOPMENT_TEAM = 5C6W5SYCQQ;
+				DEVELOPMENT_TEAM = MXGCKXDXUM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -341,7 +345,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeDrop/Preview Content\"";
-				DEVELOPMENT_TEAM = 5C6W5SYCQQ;
+				DEVELOPMENT_TEAM = MXGCKXDXUM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

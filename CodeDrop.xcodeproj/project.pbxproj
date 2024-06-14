@@ -14,6 +14,10 @@
 		8C0B28B92C1C77FD00ED0F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */; };
 		8C0B28BC2C1C77FD00ED0F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */; };
 		8C0B28C62C1C7B5400ED0F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28C52C1C7B5400ED0F88 /* .gitignore */; };
+		8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */; };
+		8CF5A5C12C1CDD3800D0FA08 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */; };
+		8CF5A5C32C1CDD7F00D0FA08 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */; };
+		8CF5A5C52C1CE19900D0FA08 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C42C1CE19900D0FA08 /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeDrop.entitlements; sourceTree = "<group>"; };
 		8C0B28C52C1C7B5400ED0F88 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardView.swift; sourceTree = "<group>"; };
+		8CF5A5BF2C1CDCE300D0FA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		8CF5A5C42C1CE19900D0FA08 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +68,15 @@
 		8C0B28B12C1C77FB00ED0F88 /* CodeDrop */ = {
 			isa = PBXGroup;
 			children = (
+				8CF5A5BF2C1CDCE300D0FA08 /* Info.plist */,
 				8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */,
 				8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */,
 				79CA3B1F2C1CBB4800CE2ED5 /* StorageView.swift */,
 				8C0B28B62C1C77FB00ED0F88 /* Item.swift */,
+				8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */,
+				8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */,
+				8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */,
+				8CF5A5C42C1CE19900D0FA08 /* UserDefaultsManager.swift */,
 				8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */,
 				8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */,
 				8C0B28BA2C1C77FD00ED0F88 /* Preview Content */,
@@ -152,7 +166,11 @@
 				79CA3B202C1CBB4800CE2ED5 /* StorageView.swift in Sources */,
 				8C0B28B52C1C77FB00ED0F88 /* ContentView.swift in Sources */,
 				8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */,
+				8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */,
+				8CF5A5C52C1CE19900D0FA08 /* UserDefaultsManager.swift in Sources */,
 				8C0B28B32C1C77FB00ED0F88 /* CodeDropApp.swift in Sources */,
+				8CF5A5C32C1CDD7F00D0FA08 /* ActivityController.swift in Sources */,
+				8CF5A5C12C1CDD3800D0FA08 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +309,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeDrop/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,6 +341,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodeDrop/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

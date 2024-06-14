@@ -12,6 +12,7 @@
 		8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28B62C1C77FB00ED0F88 /* Item.swift */; };
 		8C0B28B92C1C77FD00ED0F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */; };
 		8C0B28BC2C1C77FD00ED0F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */; };
+		8C0B28C62C1C7B5400ED0F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28C52C1C7B5400ED0F88 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeDrop.entitlements; sourceTree = "<group>"; };
+		8C0B28C52C1C7B5400ED0F88 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		8C0B28A62C1C77FB00ED0F88 = {
 			isa = PBXGroup;
 			children = (
+				8C0B28C52C1C7B5400ED0F88 /* .gitignore */,
 				8C0B28B12C1C77FB00ED0F88 /* CodeDrop */,
 				8C0B28B02C1C77FB00ED0F88 /* Products */,
 			);
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C0B28BC2C1C77FD00ED0F88 /* Preview Assets.xcassets in Resources */,
+				8C0B28C62C1C7B5400ED0F88 /* .gitignore in Resources */,
 				8C0B28B92C1C77FD00ED0F88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +296,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.InnerPeace.CodeDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,8 +327,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.InnerPeace.CodeDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

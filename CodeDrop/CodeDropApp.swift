@@ -25,7 +25,7 @@ struct CodeDropApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MyCardView()
         }
         .modelContainer(sharedModelContainer)
     }

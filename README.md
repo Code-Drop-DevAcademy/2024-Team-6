@@ -14,6 +14,10 @@
 - **나의 바뱍카드 생성하기**: 나의 이름과 관심사, 음식 취향을 한눈에 볼 수 있는 프로필 카드를 생성합니다.
 - **바뱍카드 공유하기**: 식사 약속에 나가기 전, 서로의 바뱍카드를 공유하고 확인하며 대화 주제를 미리 생각하게 합니다.
 - **바뱍카드 모아보기**: 상대방에게 받은 바뱍카드를 한곳에서 모아볼 수 있습니다.
+  
+|![image](https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_create.png?raw=true)|![image](https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_share.png?raw=true)|![image](https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_collection.png?raw=true)|
+|:-:|:-:|:-:|
+|[ 나의 바뱍카드 생성하기 ]|[ 바뱍카드 공유하기 ]|[ 바뱍카드 모아보기 ]|
 
 
 ## :sparkles: Skills & Tech Stack

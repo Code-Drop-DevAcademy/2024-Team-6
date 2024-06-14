@@ -15,8 +15,16 @@ struct NameAddView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                TextField("이름을 입력해주세요", text: $name)
+                TextField("여기에 작성해주세요", text: $name)
+                    .font(.title)
                     .padding()
+                    .overlay(
+                        Rectangle()
+                            .padding(.horizontal)
+                            .frame(height: 0.33)
+                            .foregroundColor(.primary.opacity(0.3)),
+                        alignment: .bottom
+                    )
                 
                 Spacer()
                 

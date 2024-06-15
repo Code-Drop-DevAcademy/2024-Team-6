@@ -55,6 +55,8 @@ struct MyCardView: View {
                 cardView
 
                 Button(action: {
+                    let image = cardView.asUIImage(size: CGSize(width: 363, height: 570))
+                    sharedImage = image
                     isSharedPresented.toggle()
                 }) {
                     HStack {
@@ -82,6 +84,7 @@ struct MyCardView: View {
             StorageView()
         }
         .sheet(isPresented: $isSharedPresented) {
+            
             if let sharedImage = sharedImage {
                 ActivityViewController(activityItems: [sharedImage])
             }

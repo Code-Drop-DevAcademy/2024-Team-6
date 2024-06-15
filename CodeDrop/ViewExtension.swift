@@ -8,26 +8,38 @@
 import Foundation
 import SwiftUI
 
+import SwiftUI
+import UIKit
+
 extension View {
-    // SwiftUI View를 UIImage로 변환하는 함수
     func asUIImage(size: CGSize) -> UIImage {
         let controller = UIHostingController(rootView: self)
         let view = controller.view
 
-        // Ensure the view uses a transparent background
         view?.bounds = CGRect(origin: .zero, size: size)
         view?.backgroundColor = .clear
-        view?.isOpaque = false // 투명도를 유지하기 위해 필요
 
-        let format = UIGraphicsImageRendererFormat()
-        format.opaque = false // 투명도를 유지
-
-        let renderer = UIGraphicsImageRenderer(size: size, format: format)
-        return renderer.image { context in
-            // 투명한 배경을 설정
-            context.cgContext.setFillColor(UIColor.clear.cgColor)
-            context.cgContext.fill(view!.bounds)
+        let renderer = UIGraphicsImageRenderer(size: size)
+        return renderer.image { _ in
             view?.drawHierarchy(in: view!.bounds, afterScreenUpdates: true)
+        }
+    }
+    
+    func saveAsPNG(size: CGSize, filename: String) -> URL? {
+        let image = self.asUIImage(size: size)
+        guard let data = image.pngData() else {
+            return nil
+        }
+        
+        let tempDirectory = FileManager.default.temporaryDirectory
+        let fileURL = tempDirectory.appendingPathComponent("\(filename).png")
+        
+        do {
+            try data.write(to: fileURL)
+            return fileURL
+        } catch {
+            print("Error saving image: \(error)")
+            return nil
         }
     }
 }

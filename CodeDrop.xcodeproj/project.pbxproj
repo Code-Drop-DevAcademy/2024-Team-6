@@ -14,14 +14,15 @@
 		8C0B28B92C1C77FD00ED0F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */; };
 		8C0B28BC2C1C77FD00ED0F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */; };
 		8C0B28C62C1C7B5400ED0F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8C0B28C52C1C7B5400ED0F88 /* .gitignore */; };
+		8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */; };
+		8C1B8F492C1D090D00C9E096 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B8F482C1D090D00C9E096 /* OnboardingView.swift */; };
+		8CF5A5C12C1CDD3800D0FA08 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */; };
+		8CF5A5C32C1CDD7F00D0FA08 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */; };
+		8CF5A5C72C1CF8CA00D0FA08 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C62C1CF8CA00D0FA08 /* RecordModel.swift */; };
 		BDE3E53E2C1CB3C4007510DF /* NameAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E53D2C1CB3C4007510DF /* NameAddView.swift */; };
 		BDE3E5402C1CB538007510DF /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E53F2C1CB538007510DF /* SelectView.swift */; };
 		BDE3E5422C1CB54E007510DF /* FoodSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E5412C1CB54E007510DF /* FoodSelectView.swift */; };
 		BDE3E5472C1CD1A4007510DF /* InterestSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3E5462C1CD1A4007510DF /* InterestSelectView.swift */; };
-		8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */; };
-		8CF5A5C12C1CDD3800D0FA08 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */; };
-		8CF5A5C32C1CDD7F00D0FA08 /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */; };
-		8CF5A5C52C1CE19900D0FA08 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5A5C42C1CE19900D0FA08 /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,16 +35,17 @@
 		8C0B28BB2C1C77FD00ED0F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeDrop.entitlements; sourceTree = "<group>"; };
 		8C0B28C52C1C7B5400ED0F88 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardView.swift; sourceTree = "<group>"; };
+		8C1B8F482C1D090D00C9E096 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8CF5A5BF2C1CDCE300D0FA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		8CF5A5C62C1CF8CA00D0FA08 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
 		BDE3E53D2C1CB3C4007510DF /* NameAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAddView.swift; sourceTree = "<group>"; };
 		BDE3E53F2C1CB538007510DF /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		BDE3E5412C1CB54E007510DF /* FoodSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSelectView.swift; sourceTree = "<group>"; };
 		BDE3E5462C1CD1A4007510DF /* InterestSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestSelectView.swift; sourceTree = "<group>"; };
 		BDE3E5482C1CD72A007510DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardView.swift; sourceTree = "<group>"; };
-		8CF5A5BF2C1CDCE300D0FA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
-		8CF5A5C42C1CE19900D0FA08 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,15 +84,16 @@
 				8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */,
 				BDE3E5432C1CB55D007510DF /* MyCardSetting */,
 				8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */,
+				8C1B8F482C1D090D00C9E096 /* OnboardingView.swift */,
 				79CA3B1F2C1CBB4800CE2ED5 /* StorageView.swift */,
 				8C0B28B62C1C77FB00ED0F88 /* Item.swift */,
 				8C0B28C72C1CB36800ED0F88 /* MyCardView.swift */,
 				8CF5A5C02C1CDD3800D0FA08 /* ViewExtension.swift */,
 				8CF5A5C22C1CDD7F00D0FA08 /* ActivityController.swift */,
-				8CF5A5C42C1CE19900D0FA08 /* UserDefaultsManager.swift */,
 				8C0B28B82C1C77FD00ED0F88 /* Assets.xcassets */,
 				8C0B28BD2C1C77FD00ED0F88 /* CodeDrop.entitlements */,
 				8C0B28BA2C1C77FD00ED0F88 /* Preview Content */,
+				8CF5A5C62C1CF8CA00D0FA08 /* RecordModel.swift */,
 			);
 			path = CodeDrop;
 			sourceTree = "<group>";
@@ -190,12 +193,13 @@
 				8C0B28B52C1C77FB00ED0F88 /* ContentView.swift in Sources */,
 				8C0B28B72C1C77FB00ED0F88 /* Item.swift in Sources */,
 				BDE3E53E2C1CB3C4007510DF /* NameAddView.swift in Sources */,
+				8CF5A5C72C1CF8CA00D0FA08 /* RecordModel.swift in Sources */,
 				BDE3E5402C1CB538007510DF /* SelectView.swift in Sources */,
 				BDE3E5422C1CB54E007510DF /* FoodSelectView.swift in Sources */,
 				8C0B28C82C1CB36800ED0F88 /* MyCardView.swift in Sources */,
-				8CF5A5C52C1CE19900D0FA08 /* UserDefaultsManager.swift in Sources */,
 				8C0B28B32C1C77FB00ED0F88 /* CodeDropApp.swift in Sources */,
 				8CF5A5C32C1CDD7F00D0FA08 /* ActivityController.swift in Sources */,
+				8C1B8F492C1D090D00C9E096 /* OnboardingView.swift in Sources */,
 				8CF5A5C12C1CDD3800D0FA08 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +335,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeDrop/Preview Content\"";
-				DEVELOPMENT_TEAM = MXGCKXDXUM;
+				DEVELOPMENT_TEAM = 5C6W5SYCQQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -363,7 +367,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeDrop/Preview Content\"";
-				DEVELOPMENT_TEAM = MXGCKXDXUM;
+				DEVELOPMENT_TEAM = 5C6W5SYCQQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -7,10 +7,18 @@
 
 import SwiftUI
 
+class UserData {
+    static var name: String = ""
+    static var interested: [String] = []
+    static var likeFood: [String] = []
+}
+
 struct NameAddView: View {
     
     @State var name = ""
+    @State private var navigateToNext = false
     @Binding var isShowingSheet: Bool
+    
     
     var body: some View {
         NavigationStack{
@@ -30,16 +38,21 @@ struct NameAddView: View {
                     .background(Color.secondary.opacity(0.4))
                     .cornerRadius(10)
                     
-                    NavigationLink(destination: InterestSelectView(isShowingSheet: $isShowingSheet)) {
+                    Button(action: {
+                        navigateToNext.toggle()
+                        UserData.name = name
+                        print("UserData Print: \(UserData.name), \(name)")
+                    }, label: {
                         Text("다음으로")
-                    }
+                    })
                     .frame(width: 170, height: 56)
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .background(Color.primary)
                     .cornerRadius(10)
-                    .onTapGesture {
-                        UserDefaults.standard.set(name, forKey: "name")
+                    
+                    NavigationLink(destination: InterestSelectView(isShowingSheet: $isShowingSheet), isActive: $navigateToNext) {
+                        EmptyView()
                     }
                 }
             }

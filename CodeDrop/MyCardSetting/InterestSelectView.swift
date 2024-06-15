@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InterestSelectView: View {
     
+    @State var navigateToNext = false
     @State private var selectedInterests: [String] = []
     
     @Binding var isShowingSheet: Bool
@@ -28,16 +29,20 @@ struct InterestSelectView: View {
                 .background(Color.secondary.opacity(0.4))
                 .cornerRadius(10)
                 
-                NavigationLink(destination: FoodSelectView(isShowingSheet: $isShowingSheet)) {
+                Button(action: {
+                    navigateToNext.toggle()
+                    UserData.interested = selectedInterests
+                }, label: {
                     Text("다음으로")
-                }
+                })
                 .frame(width: 170, height: 56)
                 .foregroundColor(.white)
                 .fontWeight(.bold)
                 .background(Color.primary)
                 .cornerRadius(10)
-                .onTapGesture {
-                    UserDefaults.standard.set(selectedInterests, forKey: "interests")
+                
+                NavigationLink(destination: FoodSelectView(isShowingSheet: $isShowingSheet), isActive: $navigateToNext) {
+                    EmptyView()
                 }
             }
         }

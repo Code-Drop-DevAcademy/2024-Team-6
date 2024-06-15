@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FoodSelectView: View {
     
+    @Environment(\.modelContext) var modelContext
     @State private var selectedFoods: [String] = []
     
     @Binding var isShowingSheet: Bool
@@ -36,7 +37,7 @@ struct FoodSelectView: View {
             .cornerRadius(10)
             
             Button(action: {
-                UserDefaults.standard.set(selectedFoods, forKey: "foods")
+                saveData(name: UserData.name, interest: UserData.interested, foods: selectedFoods)
                 
                 isShowingSheet.toggle()
                 
@@ -49,5 +50,18 @@ struct FoodSelectView: View {
             .background(Color.primary)
             .cornerRadius(10)
         }
+    }
+    
+    func saveData(name: String, interest: [String], foods: [String]) {
+        let model = RecordModel(id: UUID(), name: name, interestedThings: interest, likeFoods: foods)
+        modelContext.insert(model)
+        print("saving data: \(model)")
+        
+        do {
+            try modelContext.save()
+        } catch {
+            print("error saving dat: \(error.localizedDescription)")
+        }
+        
     }
 }

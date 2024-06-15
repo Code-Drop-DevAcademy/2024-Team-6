@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		79CA3B1F2C1CBB4800CE2ED5 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
-		8C0B28AF2C1C77FB00ED0F88 /* CodeDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C0B28AF2C1C77FB00ED0F88 /* 바뱍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "바뱍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0B28B22C1C77FB00ED0F88 /* CodeDropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDropApp.swift; sourceTree = "<group>"; };
 		8C0B28B42C1C77FB00ED0F88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C0B28B62C1C77FB00ED0F88 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		8C0B28B02C1C77FB00ED0F88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8C0B28AF2C1C77FB00ED0F88 /* CodeDrop.app */,
+				8C0B28AF2C1C77FB00ED0F88 /* 바뱍.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			);
 			name = CodeDrop;
 			productName = CodeDrop;
-			productReference = 8C0B28AF2C1C77FB00ED0F88 /* CodeDrop.app */;
+			productReference = 8C0B28AF2C1C77FB00ED0F88 /* 바뱍.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -335,11 +335,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeDrop/Preview Content\"";
-				DEVELOPMENT_TEAM = 5C6W5SYCQQ;
+				DEVELOPMENT_TEAM = MXGCKXDXUM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CodeDrop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "바뱍";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,7 +349,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.InnerPeace.CodeDrop;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "바뱍";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -367,11 +368,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodeDrop/Preview Content\"";
-				DEVELOPMENT_TEAM = 5C6W5SYCQQ;
+				DEVELOPMENT_TEAM = MXGCKXDXUM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CodeDrop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "바뱍";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,7 +382,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.InnerPeace.CodeDrop;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "바뱍";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;

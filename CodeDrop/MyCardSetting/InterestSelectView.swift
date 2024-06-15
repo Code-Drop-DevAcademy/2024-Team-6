@@ -19,6 +19,14 @@ struct InterestSelectView: View {
             SelectView(interests: ["야구", "축구", "사진", "여행", "독서", "음악", "영화", "요리", "커피", "술 한 잔", "예술", "테크놀로지", "게임", "자전거", "등산", "피트니스", "요가", "드라마", "패션", "동물"],
             selectedInterests: $selectedInterests)
             
+            Text("관심사는 최대 3개까지 선택할 수 있습니다.")
+                .foregroundStyle(.secondary)
+                .font(.subheadline)
+                .padding()
+            
+            Spacer()
+            
+            
             HStack {
                 Button("취소") {
                     isShowingSheet.toggle()

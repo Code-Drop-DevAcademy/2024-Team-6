@@ -21,6 +21,13 @@ struct FoodSelectView: View {
                                    "갈비", "샌드위치", "간장게장", "초밥", "팟타이",
                                    "팬케이크", "떡볶이", "라멘", "라자냐", "치킨"
                                   ], selectedInterests: $selectedFoods)
+            
+            Text("좋아하는 음식은 최대 3개까지 선택할 수 있습니다.")
+                .foregroundStyle(.secondary)
+                .font(.subheadline)
+                .padding()
+            
+            Spacer()
         }
         .navigationBarTitle("좋아하는 음식을 선택하세요")
         

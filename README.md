@@ -1,17 +1,20 @@
 # 🍚 Babyak (바뱍)
-<img width="338" alt="AppIcon" src="https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_icon.png?raw=true">
+<img width="1000" alt="AppCover" src="https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_cover.png?raw=true">
 
 **Babyak은 친해지고 싶은 사람과의 식사 자리에서 편하게 대화할 수 있도록 도와줍니다.**<br/>
 직장에서 친해지고 싶은 사람이 있나요?<br/> 
 그 사람과 식사 약속을 잡고싶은데, 어떤 얘기를 해야 할지 걱정되시나요?<br/> 
 바뱍이 당신의 자연스러운 밥 약속을 도와드릴게요! <br/> 
 
+## 💭 Ideation
+<img width="1000" alt="Ideation" src="https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_ideation.png?raw=true">
+
 ## :pushpin: Features
 
 - **나의 바뱍카드 생성하기**: 나의 이름과 관심사, 음식 취향을 한눈에 볼 수 있는 프로필 카드를 생성합니다.
 - **바뱍카드 공유하기**: 식사 약속에 나가기 전, 서로의 바뱍카드를 공유하고 확인하며 대화 주제를 미리 생각하게 합니다.
 - **바뱍카드 모아보기**: 상대방에게 받은 바뱍카드를 한곳에서 모아볼 수 있습니다.
-
+<img width="800" alt="Features" src="https://github.com/Code-Drop-DevAcademy/2024-Team-6/blob/main/Babyak_Feature.png?raw=true">
 
 ## :sparkles: Skills & Tech Stack
 
